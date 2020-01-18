@@ -160,7 +160,9 @@ body {
       font-size: 16px;
       margin-bottom: 3%;
       letter-spacing: 0.1em;
-      line-height: 1.2em; }
+      line-height: 1.2em;
+      width: 20%;
+      margin: 0 auto 5% auto; }
     #lead .lead_tx_wrap .content_item_title {
       margin-bottom: 3%;
       font-size: 24px;
@@ -178,7 +180,9 @@ body {
       font-size: 24px;
       margin-top: 5%;
       font-family: "FuturaStd-Light";
-      letter-spacing: 0.2em; }
+      letter-spacing: 0.2em;
+      width: 60%;
+      margin: 10% auto 0 auto; }
     #lead .lead_tx_wrap .lead_asakusa_img {
       position: absolute;
       left: -40%;
@@ -201,7 +205,7 @@ body {
       width: 30%; }
 
 #hotel_param {
-  padding: 10% 0; }
+  padding: 10% 0 3% 0; }
   #hotel_param .param_material2 {
     width: 30%;
     margin: -5% auto 10% 0; }
@@ -238,7 +242,10 @@ body {
           font-family: "FuturaStd-Light";
           font-size: 44px;
           letter-spacing: 0.2em;
-          line-height: 1.6em; }
+          line-height: 1.6em;
+          width: 45%; }
+        #hotel_param .hotel_param_wrap .room .room_tx .title_right {
+          margin: 0 0 0 auto; }
         #hotel_param .hotel_param_wrap .room .room_tx .param_item_sub_title {
           font-family: "Sawarabi Mincho";
           font-size: 20px;
@@ -259,6 +266,87 @@ body {
           width: 80%; }
         #hotel_param .hotel_param_wrap .room .room_tx .view_more_right {
           margin: 12% 0 0 auto; }
+
+#footer {
+  position: relative; }
+  #footer .copy_right {
+    position: absolute;
+    right: 2%;
+    bottom: -15%;
+    font-family: "sawarabi-mincho"; }
+    #footer .copy_right .copy_right_tx {
+      font-size: 8px;
+      color: #FFFFFF;
+      text-align: left; }
+  #footer .footer_wrap {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto 3% auto; }
+    #footer .footer_wrap .footer_left {
+      margin: 0 auto;
+      padding-top: 5%;
+      width: 50%;
+      border-right: 1px solid #FFFFFF; }
+      #footer .footer_wrap .footer_left .footer_left_img {
+        width: 60%;
+        margin: 0 auto; }
+    #footer .footer_wrap .footer_right {
+      margin: 0 auto;
+      padding: 5% 0 0 10%;
+      width: 50%;
+      color: #FFFFFF; }
+      #footer .footer_wrap .footer_right .footer_right_tx .access1 {
+        font-family: "sawarabi-mincho";
+        line-height: 3em;
+        font-size: 12px;
+        text-align: left;
+        letter-spacing: 0.2em; }
+      #footer .footer_wrap .footer_right .footer_right_tx .access2 {
+        font-family: "sawarabi-mincho";
+        line-height: 3em;
+        font-size: 12px;
+        text-align: left;
+        letter-spacing: 0.2em; }
+      #footer .footer_wrap .footer_right .footer_right_tx .access3 {
+        font-family: "sawarabi-mincho";
+        line-height: 3em;
+        font-size: 12px;
+        text-align: left;
+        letter-spacing: 0.2em; }
+      #footer .footer_wrap .footer_right .footer_right_tx .access4 {
+        font-family: "sawarabi-mincho";
+        line-height: 3em;
+        font-size: 12px;
+        text-align: left;
+        letter-spacing: 0.2em; }
+      #footer .footer_wrap .footer_right .footer_right_tx .access5 {
+        font-size: 18px;
+        font-family: "FuturaStd-Light";
+        border-bottom: 1px solid #FFFFFF;
+        padding-bottom: 3px;
+        text-align: left;
+        margin: 7% 0;
+        letter-spacing: 0.2em;
+        display: inline-block; }
+        #footer .footer_wrap .footer_right .footer_right_tx .access5 a {
+          color: #FFFFFF; }
+      #footer .footer_wrap .footer_right .footer_right_tx .other_hotels .other_hotels_tx {
+        text-align: left;
+        letter-spacing: 0.2em;
+        font-size: 16px;
+        line-height: 2em;
+        font-family: "FuturaStd-Light";
+        margin-bottom: 3%; }
+      #footer .footer_wrap .footer_right .footer_right_tx .other_hotels .other_hotels_imgs {
+        display: flex;
+        display: -webkit-flex;
+        align-items: flex-end;
+        margin-bottom: 3%; }
+        #footer .footer_wrap .footer_right .footer_right_tx .other_hotels .other_hotels_imgs img {
+          width: 20%;
+          margin: 0 auto; }
 
 .left {
   text-align: left; }
