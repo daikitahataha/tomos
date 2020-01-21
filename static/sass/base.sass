@@ -77,6 +77,8 @@ body
   margin: auto
   width: 10%
   z-index: 100
+  animation-name: mv_left_img2_fadeIn
+  animation-duration: 3s
 
 .mv_left_img3
   position: absolute
@@ -99,6 +101,8 @@ body
   margin: auto
   width: 30%
   z-index: 100
+  animation-name: mv_material_fadeIn
+  animation-duration: 3s
 
 .mv-right
   width: 50%
@@ -129,6 +133,8 @@ body
   margin: auto
   width: 40%
   z-index: 100
+  animation-name: mv_material_fadeIn
+  animation-duration: 3s
 
 .mv_logo
   position: absolute
@@ -141,7 +147,7 @@ body
   z-index: 1000
 
 #lead
-  background: url(../images/d8ee92_ec39d182101c4aff8a989221b4fe9fa5_mv2.jpg) center center no-repeat
+  background: url(../images/mv2.jpg) center center no-repeat
   background-size: cover
   width: 100%
   margin: 10% 0 0 0
@@ -287,6 +293,8 @@ body
           margin-top: 12%
           text-align: center
           width: 80%
+        .view_more:hover
+          background: #7E6B5A
         .view_more_right
           margin: 12% 0 0 auto
 
@@ -431,6 +439,21 @@ body
 .sp_lead_material1, .sp_lead_material2
   display: none
 
+@keyframes mv_material_fadeIn
+  from
+    opacity: 0
+    transform: translateX(-400px)
+  to
+    opacity: 1
+    transform: translate(0)
+
+@keyframes mv_left_img2_fadeIn
+  from
+    opacity: 0
+    transform: translateY(-100px)
+  to
+    opacity: 1
+    transform: translateY(0)
 
 .left
   text-align: left
