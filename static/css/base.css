@@ -67,7 +67,9 @@ body {
   right: 46%;
   bottom: 0;
   margin: auto;
-  width: 30%; }
+  width: 30%;
+  animation-name: mv_left_city_center_fadeIn;
+  animation-duration: 5s; }
 
 .mv_left_img2 {
   position: absolute;
@@ -86,7 +88,11 @@ body {
   margin: auto;
   height: 340px;
   width: 30%;
-  z-index: 100; }
+  z-index: 100;
+  animation-name: mv_left_img3_fadeIn;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  animation-duration: 2s; }
 
 .mv_left_img3 img {
   height: 100%; }
@@ -118,7 +124,11 @@ body {
   left: -20%;
   margin: auto;
   width: 120%;
-  z-index: 100; }
+  z-index: 100;
+  animation-name: mv_right_img1_fadeIn;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: both; }
 
 .mv_right_img1 img {
   height: 100px; }
@@ -150,14 +160,66 @@ body {
   background-size: cover;
   width: 100%;
   margin: 10% 0 0 0;
-  padding: 8% 0 0 0; }
+  padding: 8% 0 0 0;
+  position: relative; }
+  #lead .lead_asakusa_img {
+    position: absolute;
+    left: 0%;
+    top: 30%;
+    width: 30%;
+    z-index: 100;
+    opacity: 0;
+    transition: all 2s ease-in;
+    transform: translateX(-100px); }
+  #lead .lead_material1 {
+    position: absolute;
+    left: 5%;
+    top: 75%;
+    width: 25%;
+    z-index: 100;
+    transition: all 1s ease-in;
+    transform: translateX(-100px);
+    opacity: 0; }
+  #lead .lead_img2 {
+    position: absolute;
+    right: 15%;
+    top: 60%;
+    width: 15%;
+    z-index: 100;
+    transition: all 1s ease-in;
+    opacity: 0; }
+  #lead .lead_material2 {
+    position: absolute;
+    right: 15%;
+    top: 20%;
+    width: 15%;
+    z-index: 100;
+    transition: all 1s ease-in;
+    transform: translateX(100px);
+    opacity: 0; }
+  #lead .sp_lead_material1 {
+    position: absolute;
+    left: -55%;
+    top: 20%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1; }
+  #lead .sp_lead_material2 {
+    position: absolute;
+    left: -30%;
+    top: 95%;
+    width: 70%;
+    z-index: -1; }
   #lead .lead_tx_wrap {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 5% 0;
     width: 50%;
     height: 80%;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+    transition: all 2s ease;
+    transform: translateX(100px);
+    opacity: 0; }
     #lead .lead_tx_wrap h4 {
       text-align: center;
       color: #FFFFFF; }
@@ -192,45 +254,15 @@ body {
       letter-spacing: 0.2em;
       width: 60%;
       margin: 10% auto 0 auto; }
-    #lead .lead_tx_wrap .lead_asakusa_img {
-      position: absolute;
-      left: -40%;
-      top: 30%;
-      width: 50%; }
-    #lead .lead_tx_wrap .lead_material1 {
-      position: absolute;
-      left: -38%;
-      top: 75%;
-      width: 50%; }
-    #lead .lead_tx_wrap .lead_img2 {
-      position: absolute;
-      right: -15%;
-      top: 60%;
-      width: 30%; }
-    #lead .lead_tx_wrap .lead_material2 {
-      position: absolute;
-      right: -20%;
-      top: 20%;
-      width: 30%; }
-    #lead .lead_tx_wrap .sp_lead_material1 {
-      position: absolute;
-      left: -55%;
-      top: 20%;
-      width: 100%;
-      opacity: 0.5;
-      z-index: -1; }
-    #lead .lead_tx_wrap .sp_lead_material2 {
-      position: absolute;
-      left: -30%;
-      top: 95%;
-      width: 70%;
-      z-index: -1; }
 
 #hotel_param {
   padding: 10% 0 3% 0; }
   #hotel_param .param_material2 {
     width: 30%;
-    margin: -5% auto 10% 0; }
+    margin: -5% auto 10% 0;
+    transition: all 1s ease;
+    transform: translateX(50px);
+    opacity: 0; }
   #hotel_param .hotel_param_wrap {
     width: 65%;
     margin: 0 auto;
@@ -250,7 +282,10 @@ body {
         width: 45%;
         top: 10%;
         right: -20%;
-        z-index: 100; }
+        z-index: 100;
+        transition: all 1s ease;
+        transform: translateX(-50px);
+        opacity: 0; }
       #hotel_param .hotel_param_wrap .room .img_left {
         width: 100%;
         position: relative; }
@@ -410,7 +445,10 @@ body {
         position: absolute;
         top: 40%;
         left: 0;
-        width: 80%; }
+        width: 80%;
+        animation-name: mv_right_img1_fadeIn;
+        animation-duration: 1s;
+        animation-fill-mode: both; }
     #sp_mv .sp_mv_wrap .sp_mv_lower_wrap {
       height: 50%;
       display: flex;
@@ -429,7 +467,9 @@ body {
           top: 60%;
           right: -40%;
           width: 100%;
-          z-index: 10; }
+          z-index: 10;
+          animation-name: mv_left_city_center_fadeIn;
+          animation-duration: 2s; }
 
 .sp_lead_material1, .sp_lead_material2 {
   display: none; }
@@ -448,11 +488,45 @@ body {
   to {
     opacity: 1;
     transform: translateY(0); } }
+@keyframes mv_left_city_center_fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+@keyframes mv_right_img1_fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(100px); }
+  to {
+    opacity: 1;
+    transrom: translateX(0); } }
+@keyframes mv_left_img3_fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+@keyframes lead_tx_wrap_fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(100px); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
 .left {
-  text-align: left; }
+  text-align: left;
+  transition: all 1s ease;
+  transform: translateX(50px);
+  opacity: 0; }
 
 .right {
-  text-align: right; }
+  text-align: right;
+  transition: all 1s ease;
+  transform: translateX(-50px);
+  opacity: 0; }
 
 .order_2 {
   order: 2; }

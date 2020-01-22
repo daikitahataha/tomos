@@ -96,35 +96,36 @@
     display: block; }
   .wrapper #lead {
     background: initial; }
+    .wrapper #lead .lead_img2 {
+      width: 75%;
+      right: 0;
+      top: 5%;
+      z-index: -1;
+      opacity: 0.5; }
+    .wrapper #lead .lead_asakusa_img {
+      left: -30%;
+      top: 70%;
+      width: 110%;
+      z-index: -1;
+      opacity: 0.5; }
+    .wrapper #lead .lead_tx_date {
+      display: none; }
+    .wrapper #lead .lead_material1 {
+      display: none; }
+    .wrapper #lead .lead_material2 {
+      position: absolute;
+      right: -80%;
+      top: 50%;
+      width: 70%;
+      opacity: 0.5;
+      z-index: -1; }
+    .wrapper #lead .sp_lead_material1, .wrapper #lead .sp_lead_material2 {
+      display: block; }
     .wrapper #lead .lead_tx_wrap {
       width: 80%;
       background: initial; }
       .wrapper #lead .lead_tx_wrap .lead_item_title {
         width: 50%; }
-      .wrapper #lead .lead_tx_wrap .lead_img2 {
-        width: 120%;
-        top: 0;
-        z-index: -1;
-        opacity: 0.5; }
-      .wrapper #lead .lead_tx_wrap .lead_asakusa_img {
-        left: -30%;
-        top: 70%;
-        width: 120%;
-        z-index: -1;
-        opacity: 0.5; }
-      .wrapper #lead .lead_tx_wrap .lead_tx_date {
-        display: none; }
-      .wrapper #lead .lead_tx_wrap .lead_material1 {
-        display: none; }
-      .wrapper #lead .lead_tx_wrap .lead_material2 {
-        position: absolute;
-        right: -80%;
-        top: 50%;
-        width: 70%;
-        opacity: 0.5;
-        z-index: -1; }
-      .wrapper #lead .lead_tx_wrap .sp_lead_material1, .wrapper #lead .lead_tx_wrap .sp_lead_material2 {
-        display: block; }
   .wrapper #hotel_param {
     margin-top: 30%; }
     .wrapper #hotel_param .hotel_param_wrap {
@@ -138,7 +139,8 @@
       .wrapper #hotel_param .hotel_param_wrap .sp_rooms1 {
         background: url(../images/mv2.jpg) center center no-repeat;
         background-size: cover;
-        opacity: 1.2; }
+        opacity: 1.2;
+        position: relative; }
       .wrapper #hotel_param .hotel_param_wrap .room-bottom {
         margin-top: 35%;
         position: relative; }
