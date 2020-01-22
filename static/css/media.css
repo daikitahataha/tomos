@@ -163,7 +163,8 @@
       .wrapper #hotel_param .hotel_param_wrap .room .room_tx .param_item_tx {
         font-size: 12px; }
       .wrapper #hotel_param .hotel_param_wrap .room .room_tx .view_more {
-        padding: 15px 15px;
+        padding: 15px 15px; }
+      .wrapper #hotel_param .hotel_param_wrap .room .room_tx .view_more_left {
         bottom: -4%; }
       .wrapper #hotel_param .hotel_param_wrap .room .room_tx .view_more_right {
         bottom: -18%; }
